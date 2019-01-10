@@ -18,7 +18,7 @@ def main():
     run_test_init()
     #run_test_go_and_stop()
     #run_test_go_straight_for_seconds()
-    run_test_go_straight_for_inches()
+    #run_test_go_straight_for_inches()
     run_test_go_straight_until_black()
 
 
@@ -133,7 +133,7 @@ def run_test_go_straight_until_black():
     #   then use this function to test that method.
     # -------------------------------------------------------------------------
     jeff = SimpleRoseBot()
-    jeff.go_straight_until_black(50)
+    jeff.go_straight_until_black(30)
 
 
 ###############################################################################
@@ -180,7 +180,7 @@ class SimpleRoseBot(object):
         while True:
             if(self.color.get_reflected_light_intensity() > 10):
                 break
-            self.mc.turn_on(speed + 20)
+            self.mc.turn_on(100)
         self.stop()
 
 ###############################################################################
